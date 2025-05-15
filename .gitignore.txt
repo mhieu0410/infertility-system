@@ -1,0 +1,19 @@
+# Bỏ qua thư mục node_modules của frontend
+frontend/node_modules/
+
+# Bỏ qua thư mục target của backend (khi build Spring Boot)
+backend/target/
+
+# Bỏ qua file log
+*.log
+
+# Bỏ qua file môi trường
+.env
+
+# Bỏ qua các file hệ thống IDE
+.vscode/
+.idea/
+
+# Bỏ qua file hệ thống OS
+.DS_Store
+Thumbs.db

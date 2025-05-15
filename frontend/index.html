@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Frontend Demo</title>
+</head>
+<body>
+  <h1>Chào từ giao diện frontend!</h1>
+  <button onclick="fetchData()">Gọi API</button>
+  <p id="result"></p>
+
+  <script>
+    function fetchData() {
+      fetch('http://localhost:8080/api/hello')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('result').innerText = data;
+        })
+        .catch(err => console.error(err));
+    }
+  </script>
+</body>
+</html>
+
